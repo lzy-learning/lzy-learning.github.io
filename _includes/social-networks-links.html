@@ -3,6 +3,18 @@
 
 {%- for network in site.social-network-links -%}
 
+  {%- if network[0] == "qq" -%}
+  <li class="list-inline-item">
+    <a href="https://wpa.qq.com/msgrd?v=3&uin={{ site.social-network-links.qq }}&site=qq&menu=yes" target="_blank" title="QQ">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-qq fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">QQ</span>
+    </a>
+  </li>
+  {% endif %}
+
   {%- if network[0] == "rss" and network[1] and site.rss-description -%}
   <li class="list-inline-item">
     <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
