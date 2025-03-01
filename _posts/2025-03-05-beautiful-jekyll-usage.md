@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample blog post
+title: "Usage of jekyll template: beautiful"
 subtitle: There's lots to learn!
 tags: [test, beautiful-jekyll]
 comments: true
