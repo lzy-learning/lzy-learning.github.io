@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Usage of jekyll template: beautiful"
+title: "Usage of jekyll template: beautiful-jekyll"
 subtitle: There's lots to learn!
 tags: [test, beautiful-jekyll]
 comments: true
@@ -8,8 +8,43 @@ mathjax: true
 author: Lin Zhiyang
 ---
 
+The essay will introduce the basic knowledge of Jekyll, include its project structure, its command and how to use it to build a beautiful blog website. As I'm not familiar with Jekyll, the content below will not cover writing liquid to form a website from scratch. From the essay, you can learn the standard structure of Jekyll project, basic syntax of Liquid and some common configurations about Jekyll template [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)
+
+### Jekyll project structure
+
+When you run `jekyll new <site_name>`, the jekyll default template will be generated in current directory. But the files or directories under the generated folder are not complete for a standard Jekyll project. Normally, a Jekyll project would contains the following (The structure comes from official website of [Jekyll](https://jekyllrb.com/docs/structure/), and I add some content): 
+
+```
+.
+├── _config.yml
+├── _data
+│   └── members.yml
+├── _drafts
+│   └── on-simplicity-in-technology.md
+├── _includes
+│   ├── footer.html
+│   └── header.html
+├── _layouts
+│   ├── default.html
+│   └── post.html
+├── _posts
+│   └── YEAR-MONTH-DAY-ESSAYTITLE.md
+├── _sass
+│   ├── _base.scss
+│   └── _layout.scss
+├── _site
+├── .jekyll-cache
+│   └── Jekyll
+│       └── Cache
+│           └── [...]
+├── .jekyll-metadata
+├── Gemfile
+├── Appraisals
+├── .jekyll-metadata
+└── index.html # can also be an 'index.md' with valid front matter
+```
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
 
 **Here is some bold text**
 
